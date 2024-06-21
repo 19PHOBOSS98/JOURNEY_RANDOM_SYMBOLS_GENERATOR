@@ -1,0 +1,27 @@
+{
+  "variants": {
+	"facing=east": [
+		{
+		"model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_A", "weight": 10,
+		"y": 270
+		}
+	],
+	"facing=north": [
+		{
+		"model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_A", "weight": 10,
+		"y": 180
+		}
+	],
+	"facing=south": [
+	  {
+		"model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_A", "weight": 10
+		}
+	],
+	"facing=west":  [
+	  {
+		"model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_A", "weight": 10,
+		"y": 90
+		}
+	]
+  }
+}

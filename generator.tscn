@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bom3ryxxor77i"]
+
+[ext_resource type="PackedScene" uid="uid://bk7w0ayiledj2" path="res://sub_pattern_generator.tscn" id="1_fppj4"]
+[ext_resource type="PackedScene" uid="uid://c5npg214d6vrh" path="res://pattern_generator.tscn" id="2_rbk07"]
+
+[node name="Generator" type="Node2D"]
+
+[node name="SubPatternGenerator" parent="." instance=ExtResource("1_fppj4")]
+visible = false
+
+[node name="PatternGenerator" parent="." instance=ExtResource("2_rbk07")]
+FILENAMES = "symbol_"
+TOTAL_PATTERNS = 100

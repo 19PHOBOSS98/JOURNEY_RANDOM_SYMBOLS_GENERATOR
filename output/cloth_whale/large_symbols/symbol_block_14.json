@@ -1,0 +1,90 @@
+{
+	"elements": [
+		{
+			"faces": {
+				"down": {
+					"cullface": "down",
+					"rotation": 0,
+					"texture": "#cover",
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					]
+				},
+				"east": {
+					"cullface": "east",
+					"rotation": 0,
+					"texture": "#cover",
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					]
+				},
+				"north": {
+					"cullface": "north",
+					"rotation": 180,
+					"texture": "#pattern",
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					]
+				},
+				"south": {
+					"cullface": "south",
+					"rotation": 180,
+					"texture": "#pattern",
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					]
+				},
+				"up": {
+					"cullface": "up",
+					"rotation": 0,
+					"texture": "#cover",
+					"uv": [
+						0,
+						16,
+						16,
+						0
+					]
+				},
+				"west": {
+					"cullface": "west",
+					"rotation": 0,
+					"texture": "#cover",
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					]
+				}
+			},
+			"from": [
+				0,
+				0,
+				0
+			],
+			"to": [
+				16,
+				16,
+				16
+			]
+		}
+	],
+	"parent": "minecraft:block/template_glazed_terracotta",
+	"textures": {
+		"cover": "minecraft:block/cloth_whale/blank_red",
+		"pattern": "minecraft:block/cloth_whale/on/symbols/subsymbols/subsymbol_3",
+		"side": "minecraft:block/cloth_whale/blank_white"
+	}
+}

@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://bom3ryxxor77i"]
+
+[ext_resource type="Script" path="res://Generator.gd" id="1_qwiih"]
+[ext_resource type="Texture2D" uid="uid://c77l7s6ounkih" path="res://red_background.png" id="3_io1bl"]
+[ext_resource type="Texture2D" uid="uid://bx7aumqqiv4pk" path="res://white.png" id="4_vsnql"]
+
+[node name="Generator" type="Node2D" node_paths=PackedStringArray("PATTERN")]
+script = ExtResource("1_qwiih")
+PATTERN = NodePath("SubViewportContainer/SubViewport/pattern")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(128, 128)
+render_target_update_mode = 4
+
+[node name="red_bg" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+position = Vector2(64, 64)
+texture = ExtResource("3_io1bl")
+
+[node name="pattern" type="Node2D" parent="SubViewportContainer/SubViewport"]
+
+[node name="block1" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(32, 32)
+texture = ExtResource("4_vsnql")
+
+[node name="block2" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(64, 32)
+texture = ExtResource("4_vsnql")
+
+[node name="block3" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(96, 32)
+texture = ExtResource("4_vsnql")
+
+[node name="block4" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(32, 64)
+texture = ExtResource("4_vsnql")
+
+[node name="block5" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(64, 64)
+texture = ExtResource("4_vsnql")
+
+[node name="block6" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(96, 64)
+texture = ExtResource("4_vsnql")
+
+[node name="block7" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(32, 96)
+texture = ExtResource("4_vsnql")
+
+[node name="block8" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(64, 96)
+texture = ExtResource("4_vsnql")
+
+[node name="block9" type="Sprite2D" parent="SubViewportContainer/SubViewport/pattern"]
+position = Vector2(96, 96)
+texture = ExtResource("4_vsnql")
